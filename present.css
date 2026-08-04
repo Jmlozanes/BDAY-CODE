@@ -1,0 +1,979 @@
+/* present.css */
+
+/* Remove default spacing */
+
+* {
+
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  /* Main background */
+  
+  body {
+  
+
+  min-height: 100vh;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  overflow: hidden;
+  
+  font-family:
+  
+      Arial,
+      sans-serif;
+  
+  background:
+  
+      radial-gradient(
+  
+          circle at center,
+  
+          #7c3d9b,
+  
+          #3c174f 45%,
+  
+          #160b29 100%
+  
+      );
+
+  
+  }
+  
+  /* Main page */
+  
+  .portal-page {
+  
+
+  position: relative;
+  
+  width: 90%;
+  
+  max-width: 750px;
+  
+  padding:
+  
+      35px
+      20px;
+  
+  text-align: center;
+  
+  z-index: 5;
+
+  
+  }
+  
+  /* Small heading */
+  
+  .small-title {
+  
+
+  color: #ffd3f0;
+  
+  font-size: 14px;
+  
+  letter-spacing: 3px;
+
+  
+  }
+  
+  /* Main title */
+  
+  h1 {
+
+  margin-top: 15px;
+  
+  color: white;
+  
+  font-size: 45px;
+  
+  line-height: 1.2;
+  
+  text-shadow:
+  
+      0 0 15px
+  
+      #ff6fc4,
+  
+      0 0 35px
+  
+      #a96cff;
+
+  
+  }
+  
+  /* Description */
+  
+  .message {
+  
+  
+  margin-top: 15px;
+  
+  color: #f5d9ff;
+  
+  font-size: 18px;
+  
+  line-height: 1.6;
+
+  
+  }
+  
+  /* Portal area */
+  
+  .portal-container {
+
+  position: relative;
+  
+  width: 300px;
+  
+  height: 300px;
+  
+  margin:
+  
+      35px auto;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  cursor: pointer;
+
+  
+  }
+  
+  /* Portal glow */
+  
+  .portal-glow {
+  
+
+  position: absolute;
+  
+  width: 220px;
+  
+  height: 220px;
+  
+  border-radius: 50%;
+  
+  background:
+  
+      radial-gradient(
+  
+          circle,
+  
+          #fff 0%,
+  
+          #ffb2df 15%,
+  
+          #c46cff 40%,
+  
+          #6b35bd 65%,
+  
+          transparent 72%
+  
+      );
+  
+  filter:
+  
+      blur(8px);
+  
+  animation:
+  
+      portalGlow
+  
+      2s infinite
+  
+      alternate;
+
+  
+  }
+  
+  /* Glowing animation */
+  
+  @keyframes portalGlow {
+
+  from {
+  
+      transform:
+  
+          scale(0.9);
+  
+      opacity: 0.7;
+  
+  }
+  
+  
+  to {
+  
+      transform:
+  
+          scale(1.15);
+  
+      opacity: 1;
+  
+  }
+  
+  
+  }
+  
+  /* Portal rings */
+  
+  .portal-ring {
+  
+
+  position: absolute;
+  
+  border-radius: 50%;
+  
+  border:
+  
+      5px solid
+  
+      rgba(
+          255,
+          180,
+          230,
+          0.9
+      );
+  
+  box-shadow:
+  
+      0 0 15px
+  
+      #ff75c7,
+  
+      inset 0 0 15px
+  
+      #a75cff;
+
+  
+  }
+  
+  /* First ring */
+  
+  .ring-one {
+  
+
+  width: 280px;
+  
+  height: 280px;
+  
+  border-style:
+  
+      dashed;
+  
+  animation:
+  
+      rotateRight
+  
+      7s linear
+  
+      infinite;
+
+  
+  }
+  
+  /* Second ring */
+  
+  .ring-two {
+
+  width: 235px;
+  
+  height: 235px;
+  
+  border-color:
+  
+      #d9a4ff;
+  
+  border-style:
+  
+      dotted;
+  
+  animation:
+  
+      rotateLeft
+  
+      5s linear
+  
+      infinite;
+
+  
+  }
+  
+  /* Third ring */
+  
+  .ring-three {
+  
+
+  width: 185px;
+  
+  height: 185px;
+  
+  border-width:
+  
+      8px;
+  
+  border-color:
+  
+      #ffffff;
+  
+  animation:
+  
+      rotateRight
+  
+      3s linear
+  
+      infinite;
+
+  
+  }
+  
+  /* Rotate right */
+  
+  @keyframes rotateRight {
+  
+ 
+  from {
+  
+      transform:
+  
+          rotate(0deg);
+  
+  }
+  
+  
+  to {
+  
+      transform:
+  
+          rotate(360deg);
+  
+  }
+
+  
+  }
+  
+  /* Rotate left */
+  
+  @keyframes rotateLeft {
+
+  from {
+  
+      transform:
+  
+          rotate(360deg);
+  
+  }
+  
+  
+  to {
+  
+      transform:
+  
+          rotate(0deg);
+  
+  }
+
+  
+  }
+  
+  /* Portal center */
+  
+  .portal-center {
+
+  position: relative;
+  
+  width: 125px;
+  
+  height: 125px;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  border-radius: 50%;
+  
+  background:
+  
+      radial-gradient(
+  
+          circle,
+  
+          #fff,
+  
+          #ffb0db 35%,
+  
+          #a54dce 75%
+  
+      );
+  
+  box-shadow:
+  
+      0 0 30px
+  
+      white,
+  
+      0 0 70px
+  
+      #ff55ba;
+
+  
+  }
+  
+  .portal-center span {
+
+  font-size: 65px;
+  
+  animation:
+  
+      cakeFloat
+  
+      2s infinite
+  
+      ease-in-out;
+
+  
+  }
+  
+  @keyframes cakeFloat {
+  
+
+  0%,
+  100% {
+  
+      transform:
+  
+          translateY(0);
+  
+  }
+  
+  
+  50% {
+  
+      transform:
+  
+          translateY(-10px);
+  
+  }
+
+  
+  }
+  
+  /* Enter button */
+  
+  #enterButton {
+  
+
+  padding:
+  
+      16px
+      30px;
+  
+  border:
+  
+      2px solid
+  
+      white;
+  
+  border-radius:
+  
+      35px;
+  
+  color:
+  
+      white;
+  
+  font-size:
+  
+      18px;
+  
+  font-weight:
+  
+      bold;
+  
+  cursor:
+  
+      pointer;
+  
+  background:
+  
+      linear-gradient(
+  
+          90deg,
+  
+          #ff5eae,
+  
+          #a45dff
+  
+      );
+  
+  box-shadow:
+  
+      0 0 20px
+  
+      #ff65ba;
+  
+  transition:
+  
+      transform 0.2s,
+  
+      box-shadow 0.2s;
+
+  
+  }
+  
+  #enterButton:hover {
+  
+
+  transform:
+  
+      scale(1.07);
+  
+  box-shadow:
+  
+      0 0 35px
+  
+      white;
+
+  
+  }
+  
+  #enterButton:active {
+  
+
+  transform:
+  
+      scale(0.93);
+
+  }
+  
+  /* Bottom text */
+  
+  .bottom-text {
+
+  margin-top:
+  
+      18px;
+  
+  color:
+  
+      #e9c9ff;
+  
+  font-size:
+  
+      13px;
+
+  
+  }
+  
+  /* Floating stars */
+  
+  .stars span {
+
+  position:
+  
+      absolute;
+  
+  font-size:
+  
+      28px;
+  
+  animation:
+  
+      starFloat
+  
+      5s infinite
+  
+      ease-in-out;
+    
+  }
+  
+  .stars span:nth-child(1) {
+  
+
+  top: 8%;
+  
+  left: 8%;
+
+  
+  }
+  
+  .stars span:nth-child(2) {
+  
+
+  top: 18%;
+  
+  right: 10%;
+  
+  animation-delay:
+  
+      1s;
+
+  
+  }
+  
+  .stars span:nth-child(3) {
+  
+
+  top: 70%;
+  
+  left: 8%;
+  
+  animation-delay:
+  
+      2s;
+  
+  
+  }
+  
+  .stars span:nth-child(4) {
+  
+ 
+  top: 80%;
+  
+  right: 10%;
+  
+  animation-delay:
+  
+      3s;
+
+  
+  }
+  
+  .stars span:nth-child(5) {
+  
+
+  top: 45%;
+  
+  left: 4%;
+  
+  animation-delay:
+  
+      1.5s;
+
+  
+  }
+  
+  .stars span:nth-child(6) {
+  
+
+  top: 42%;
+  
+  right: 5%;
+  
+  animation-delay:
+  
+      2.5s;
+
+  
+  }
+  
+  .stars span:nth-child(7) {
+  
+
+  top: 5%;
+  
+  left: 45%;
+  
+  animation-delay:
+  
+      3.5s;
+ 
+  
+  }
+  
+  .stars span:nth-child(8) {
+  
+
+  bottom: 5%;
+  
+  left: 45%;
+  
+  animation-delay:
+  
+      1s;
+
+  
+  }
+  
+  @keyframes starFloat {
+
+  0%,
+  100% {
+  
+      transform:
+  
+          translateY(0)
+  
+          rotate(0deg);
+  
+      opacity:
+  
+          0.5;
+  
+  }
+  
+  
+  50% {
+  
+      transform:
+  
+          translateY(-25px)
+  
+          rotate(20deg);
+  
+      opacity:
+  
+          1;
+  
+  }
+
+  
+  }
+  
+  /* Screen flash */
+  
+  .flash {
+
+ 
+  position:
+  
+      fixed;
+  
+  top:
+  
+      0;
+  
+  left:
+  
+      0;
+  
+  width:
+  
+      100%;
+  
+  height:
+  
+      100%;
+  
+  pointer-events:
+  
+      none;
+  
+  opacity:
+  
+      0;
+  
+  z-index:
+  
+      100;
+  
+  background:
+  
+      white;
+ 
+  
+  }
+  
+  /* Portal opening effect */
+  
+  body.opening .portal-container {
+  
+
+  animation:
+  
+      openPortal
+  
+      1.8s
+  
+      forwards;
+  
+  
+  }
+  
+  @keyframes openPortal {
+  
+
+  0% {
+  
+      transform:
+  
+          scale(1);
+  
+  }
+  
+  
+  50% {
+  
+      transform:
+  
+          scale(1.5);
+  
+  }
+  
+  
+  100% {
+  
+      transform:
+  
+          scale(8);
+  
+      opacity:
+  
+          0;
+  
+  }
+ 
+  
+  }
+  
+  /* Flash animation */
+  
+  .flash.show {
+  
+
+  animation:
+  
+      flashScreen
+  
+      1.5s
+  
+      forwards;
+ 
+  
+  }
+  
+  @keyframes flashScreen {
+  
+
+  0% {
+  
+      opacity:
+  
+          0;
+  
+  }
+  
+  
+  50% {
+  
+      opacity:
+  
+          1;
+  
+  }
+  
+  
+  100% {
+  
+      opacity:
+  
+          1;
+  
+  }
+    
+  }
+  
+  /* Mobile design */
+  
+  @media
+  (max-width: 600px) {
+  
+  
+  h1 {
+  
+      font-size:
+  
+          32px;
+  
+  }
+  
+  
+  .message {
+  
+      font-size:
+  
+          16px;
+  
+  }
+  
+  
+  .portal-container {
+  
+      width:
+  
+          260px;
+  
+      height:
+  
+          260px;
+  
+      margin:
+  
+          28px auto;
+  
+  }
+  
+  
+  .ring-one {
+  
+      width:
+  
+          245px;
+  
+      height:
+  
+          245px;
+  
+  }
+  
+  
+  .ring-two {
+  
+      width:
+  
+          205px;
+  
+      height:
+  
+          205px;
+  
+  }
+  
+  
+  .ring-three {
+  
+      width:
+  
+          165px;
+  
+      height:
+  
+          165px;
+  
+  }
+  
+  
+  #enterButton {
+  
+      font-size:
+  
+          16px;
+  
+  }
+  
+  
+  }
+  
