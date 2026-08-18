@@ -1,34 +1,62 @@
 let count = 1;
 
-const counter = document.getElementById("count");
+
+const counter =
+document.getElementById("count");
+
 
 const progressBar =
-    document.getElementById("progressBar");
+document.getElementById("progressBar");
 
 
-const loading = setInterval(() => {
 
-    count++;
-
-    counter.textContent = count;
-
-    progressBar.style.width =
-        count * 10 + "%";
+const loading =
+setInterval(()=>{
 
 
-    // When the count reaches 10
-    if (count >= 10) {
+count++;
 
-        clearInterval(loading);
 
-        // Open the birthday page
-        setTimeout(() => {
+counter.style.animation="none";
 
-            window.location.href =
-                "Passcode.html";
 
-        }, 500);
+void counter.offsetWidth;
 
-    }
 
-}, 1000);
+counter.style.animation=
+"numberPop .5s";
+
+
+
+counter.textContent=count;
+
+
+
+progressBar.style.width =
+(count * 10) + "%";
+
+
+
+
+if(count >= 10){
+
+
+clearInterval(loading);
+
+
+
+setTimeout(()=>{
+
+
+window.location.href =
+"Passcode.html";
+
+
+},1000);
+
+
+
+}
+
+
+},1000);
