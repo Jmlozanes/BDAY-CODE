@@ -1,12 +1,3 @@
-let count = 1;
-
-
-const counter =
-document.getElementById("count");
-
-
-const progressBar =
-document.getElementById("progressBar");
 
 
 
