@@ -1,4 +1,13 @@
+// present.js
 
+// Get the button
+
+const enterButton =
+
+document.getElementById(
+
+
+"enterButton"
 
 
 );
